@@ -1,0 +1,45 @@
+/* Add styles here */
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  /* Add responsive styles here */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin: 20px 0;
+}
+
+#video {
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+#form {
+  text-align: center;
+}
+
+input[type="email"] {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

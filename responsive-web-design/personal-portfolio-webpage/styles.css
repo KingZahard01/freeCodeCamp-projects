@@ -1,0 +1,79 @@
+/* Estilos generales */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos del navbar */
+
+#navbar {
+  background-color: #333;
+  color: #fff;
+  position: fixed; /* Para que el navbar se mantenga fijo en la parte superior */
+  top: 0; /* Para asegurarse de que esté siempre en la parte superior */
+  width: 100%;
+  padding: 10px 0;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: #ff7f50;
+}
+
+/* Estilos de las secciones */
+
+#welcome-section {
+  height: 100vh; /* Para que la altura del welcome section sea igual a la altura de la ventana */
+  background-color: #f0f0f0;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#projects {
+  padding: 50px 0;
+}
+
+.project-tile {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.project-tile h2 {
+  margin-top: 0;
+}
+
+.project-tile p {
+  margin-bottom: 10px;
+}
+
+.project-tile a {
+  color: #007bff;
+}
+
+.project-tile a:hover {
+  color: #0056b3;
+}
+
+/* Media query */
+
+@media (max-width: 768px) {
+  /* Agrega tus estilos para dispositivos móviles aquí */
+}
