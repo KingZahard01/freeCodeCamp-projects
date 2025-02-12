@@ -5,62 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
-    <header id="header">
-      <img id="header-img" src="your_logo.png" alt="Your Logo" />
-      <nav id="nav-bar">
-        <ul>
-          <li><a href="#section1" class="nav-link">Section 1</a></li>
-          <li><a href="#section2" class="nav-link">Section 2</a></li>
-          <li><a href="#section3" class="nav-link">Section 3</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img id="header-img" src="your_logo.png" alt="Your Logo" />
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a href="#section1" class="nav-link">Section 1</a></li>
+            <li><a href="#section2" class="nav-link">Section 2</a></li>
+            <li><a href="#section3" class="nav-link">Section 3</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <section id="section1">
-        <h2>Section 1</h2>
-        <p>Content of section 1 goes here.</p>
+      <section id="hero">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required=""
+          />
+          <input id="submit" type="submit" value="Get Started" class="btn" />
+        </form>
       </section>
 
-      <section id="section2">
-        <h2>Section 2</h2>
-        <p>Content of section 2 goes here.</p>
-      </section>
+      <main class="container">
+        <section id="section1">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Section 1</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+                distinctio soluta quasi sunt amet asperiores animi, fuga omnis
+                eveniet. Quam velit adipisci perferendis itaque enim? Dolor
+                eligendi commodi tempore nisi!
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <h2>Section 2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                saepe amet, ullam omnis ad sit laboriosam veniam aspernatur sed
+                corrupti eligendi maiores consectetur blanditiis quam a possimus
+                nihil! Delectus, eius?
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Section 3</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                est eveniet vero dicta praesentium iste magni, voluptatum quasi
+                ea et officia porro maiores recusandae architecto numquam amet
+                blanditiis, nihil hic?
+              </p>
+            </div>
+          </div>
+        </section>
 
-      <section id="section3">
-        <h2>Section 3</h2>
-        <p>Content of section 3 goes here.</p>
-      </section>
+        <section id="section2">
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/your_video_id"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </section>
 
-      <iframe
-        id="video"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/your_video_id"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
+        <section id="section3">
+          <div class="product" id="tenor">
+            <div class="level">Tenor Trombone</div>
+            <h2>$600</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="bass">
+            <div class="level">Bass Trombone</div>
+            <h2>$900</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="valve">
+            <div class="level">Valve Trombone</div>
+            <h2>$1200</h2>
+            <ol>
+              <li>Plays similar to a Trumpet</li>
+              <li>Great for Jazz Bands</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
 
-      <form
-        id="form"
-        action="https://www.freecodecamp.com/email-submit"
-        method="post"
-      >
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email"
-          required
-        />
-        <input type="submit" id="submit" value="Submit" />
-      </form>
-    </main>
-
-    <footer>
-      <p>&copy; 2024 Your Company</p>
-    </footer>
+        <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>&copy; 2024 Your Company</span>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>
