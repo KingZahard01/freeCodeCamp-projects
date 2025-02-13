@@ -1,79 +1,133 @@
 /* Estilos generales */
-
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Estilos del navbar */
-
+/* Barra de navegación */
 #navbar {
-  background-color: #333;
-  color: #fff;
-  position: fixed; /* Para que el navbar se mantenga fijo en la parte superior */
-  top: 0; /* Para asegurarse de que esté siempre en la parte superior */
+  position: fixed;
+  top: 0;
   width: 100%;
+  background-color: #333;
+  color: white;
   padding: 10px 0;
+  text-align: center;
 }
 
 #navbar ul {
-  list-style-type: none;
-  margin: 0;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 #navbar ul li {
   display: inline;
-  margin-right: 20px;
+  margin: 0 15px;
 }
 
 #navbar ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  font-size: 1.2em;
 }
 
 #navbar ul li a:hover {
-  color: #ff7f50;
+  color: #4caf50;
 }
 
-/* Estilos de las secciones */
-
+/* Sección de bienvenida */
 #welcome-section {
-  height: 100vh; /* Para que la altura del welcome section sea igual a la altura de la ventana */
-  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
   text-align: center;
-  padding-top: 100px;
 }
 
-#projects {
-  padding: 50px 0;
-}
-
-.project-tile {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-.project-tile h2 {
-  margin-top: 0;
-}
-
-.project-tile p {
+#welcome-section h1 {
+  font-size: 2.5em;
   margin-bottom: 10px;
 }
 
+#welcome-section p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Sección de proyectos */
+#projects {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.project-tile {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.project-tile h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-tile p {
+  font-size: 1em;
+  color: #555;
+}
+
 .project-tile a {
-  color: #007bff;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .project-tile a:hover {
-  color: #0056b3;
+  background-color: #45a049;
 }
 
-/* Media query */
-
+/* Consulta de medios para responsividad */
 @media (max-width: 768px) {
-  /* Agrega tus estilos para dispositivos móviles aquí */
+  #navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #welcome-section h1 {
+    font-size: 2em;
+  }
+
+  #welcome-section p {
+    font-size: 1em;
+  }
+
+  .project-tile {
+    padding: 15px;
+  }
+
+  .project-tile h3 {
+    font-size: 1.2em;
+  }
+
+  .project-tile p {
+    font-size: 0.9em;
+  }
 }
